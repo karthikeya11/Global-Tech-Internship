@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Page</title>
+<style>
+h1
+{
+	background-color:yellow;
+    box-shadow: 1px 1px 35px blue;
+	border-radius:18px;
+}
+#reg
+{
+	height:35px;
+	color:white;
+	background-color:green;
+	border-radius:10px;
+    padding: 10px;
+	font-weight:bold;
+}
+#reset
+{
+	height:35px;
+	color:white;
+	background-color:red;
+	border-radius:10px;
+    padding:10px;
+	font-weight:bold;	
+}
+label
+{
+	font-weight:bold;
+}
+</style>
+</head>
+<body bgcolor="gainsboro">
+<center>
+<center><h1><b>Student Registration Form</b></h1></center>
+<form action="response.html" method="post">
+<label name="fname" for="fname">First Name:</label>
+<input type="text" id="fname" maxlength="20" required><br><br>
+<label name="lname" for="lname">Last Name:</label>
+<input type="text" id="lname" maxlength="20" required><br><br>
+<label name="gen" for="gen">Gender:</label><br>
+<input type="radio" name="gen" value="Male" id="gen">Male<br>
+<input type="radio" name="gen" value="Female" id="gen">Female<br><br>
+<label  for="dob">Date of Birth:</label>
+<input type="date" id="dob" name="dob" required><br><br>
+<label for="country">Country:</label>
+<select id="country">
+	<option value="INDIA">INDIA</option>
+	<option value="USA">USA</option>
+	<option value="UK">UK</option>
+	<option value="UAE">UAE</option>
+	<option value="JAPAN">JAPAN</option>
+	<option value="BRAZIL">BRAZIL</option>
+	<option value="ITALY">ITALY</option>
+	<option value="RUSSIA">RUSSIA</option>
+	<option value="AUSTRALIA">AUSTRALIA</option>
+</select><br><br>
+<label for="addr">Address:</label><br>
+<textarea rows="3" cols="20" id="addr" name="addr" required></textarea>
+<br><br>
+<label for="branc">Current Course:</label>
+<select id="branc">
+	<option value="CSE">CSE</option>
+	<option value="CSM">CSE(AI/ML)</option>
+	<option value="CSN">CSE(Data Science)</option>
+	<option value="CSO">CSE(IoT)</option>
+	<option value="ECE">ECE</option>
+	<option value="EEE">EEE</option>
+	<option value="EIE">EIE</option>
+	<option value="ECI">ECI</option>
+	<option value="CE">CIVIL</option>
+	<option value="ME">MECHANICAL</option>
+</select> <br><br>
+<label for="college">College Name:</label>
+<input type="text" id="college" name="college" required> <br><br>
+<label for="uname">Create your USER NAME:</label>
+<input type="text" id="uname" name="uname" required> <br><br>
+<label for="passw">Create a strong PASSWORD:</label>
+<input type="password" id="passw" name="passw" required><br><br>
+<label for="mob">Mobile Number:</label>
+<input type="text" id="mob" name="mob" maxlength="10" required><br><br><br>
+<!--<label for="file" name="filename">Upload your DIGITAL SIGNATURE:</label>
+<input type="file" id="file" name="filename" required><br><br><br>-->
+<input type="checkbox" id="d" name="d" required>
+<label for="d" name="d">I have read and understood the terms and conditions and I shall
+abide by that. The details which are provided above are true as per best of my knowledge. </label>
+<br><br><br>
+<input id="reg" type="submit" value="Register">  <input id="reset" type="reset">
+</form>
+</center>
+</body>
+</html>
